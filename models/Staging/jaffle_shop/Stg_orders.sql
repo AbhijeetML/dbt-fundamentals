@@ -6,6 +6,6 @@ with orders as (
         order_date,
         status
 
-    from ultra-path-334709.Dbt_demoset.orders
+    from {{source('jaffle_shop','orders')}}
 
 )select * from orders

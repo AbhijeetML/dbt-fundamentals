@@ -1,0 +1,19 @@
+version: 2
+models:
+  - name: Stg_customer
+    columns: 
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+  - name: Stg_orders
+    columns:
+      - name: STATUS
+        tests:
+          - accepted_values:
+              values:
+                - completed
+                - shipped
+                - returned
+                - return_pending
+                - placed
