@@ -1,1 +1,0 @@
-SELECT  FROM `ultra-path-334709.Dbt_demoset.customers` LIMIT 1000
